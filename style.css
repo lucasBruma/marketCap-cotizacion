@@ -1,0 +1,153 @@
+body{
+    background-color: #0a0a0b;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    color: #d7c8c8;
+    transition: all .5s ease;
+}
+
+/*
+NAV
+*/
+
+nav{
+    margin-bottom: 15px;
+}
+
+.nav__container{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    background-color: #212529;
+}
+
+
+/*
+Market cap
+*/
+
+.market-cap{
+    display: flex;
+    justify-content: center;
+}
+
+.market-cap__container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search{
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    background-color: #2c3034;
+
+}
+
+.table>:not(caption)>*>* {
+    border-bottom-width: 0;
+}
+
+img{
+    width: 4%;
+    min-width: 15px;
+}
+
+.td-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.filtro{
+    display: none;
+}
+
+@media (width<600px){
+    .td-name{
+        flex-direction: column;
+    }
+    td{
+        width: 50px;
+    }
+}
+
+/*
+COTIZACION
+*/
+
+.cotizacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    gap: 50px;
+    padding: 1em;
+}
+
+.cotizacion__content{
+    width: 550px;
+    background-color: #2c3034;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 6px 4px 11px -4px #ffffff;
+}
+
+.cotizacion__button:hover{
+    transition: all .3s ease;
+}
+
+.subtitle{
+    color: #c8c8c8;
+    font-size: 16px;
+    text-align: left;
+}
+
+/*
+SELECT
+*/
+
+.select{
+    width: 250px;
+    height: auto;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: #f4dbd8;
+    border: none;
+    border-bottom: 2px solid #962d22;
+    color: rgb(37, 34, 34);
+    padding: 10px;
+    padding-right: 38px;
+    /* Adding transition effect */
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.select:hover,
+.select:focus {
+  background-color: white;
+  border-bottom-color: #DCDCDC;
+}
+
+@media (width<600px){
+    .cotizacion__content{
+        width: 300px;
+    }
+    .select{
+        width: 200px;
+    }
+}

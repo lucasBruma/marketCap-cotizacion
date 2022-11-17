@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Cotización</title>
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="nav__container">        
+            <div class="nav__item">
+                <a href="./index.html">25 criptos por capitalizacion en el mercado</a>
+            </div>
+            <div class="nav__item">
+                <a href="./cotizacion.html">Cotizacion cripto</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- cotizacion -->
+    <section class="cotizacion">
+        <h2>Cotiza criptomonedas al instante</h2>
+            <div class="cotizacion__content">
+                <div class="cotizacion__moneda">
+                    <h4 class="subtitle">moneda</h4>
+                    <select name="select" class="select selectFiat" >
+                        <option value="usd">Dólar</option>
+                        <option value="ars">Peso Argentino</option>
+                        <option value="eur">Euro</option>
+                    </select> 
+                </div>
+                <div class="cotizacion__cripto">
+                    <h4 class="subtitle">cripto</h4>
+                    <select name="select" class="select selectCripto">
+                        <!-- <option value="bitcoin">bitcoin</option>
+                        <option value="ethereum">ethereum</option>
+                        <option value="cardano">cardano</option>
+                        <option value="binancecoin">bnb</option> -->
+                    </select>
+                </div>
+                <button type="button" class="cotizacion__button btn btn-dark">
+                    Cotizar
+                </button>
+                <div class="cotizacion__resultado"></div>
+            </div>
+    </section>
+    <script src="cotizar.js"></script>
+</body>
+</html>
